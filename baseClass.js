@@ -1,8 +1,6 @@
-const groups = {{groups}};
-
 class SoundFontSeqin {
 	constructor() {
-
+		this.groups = {{groups}};
 	}
 
 	_buildBuffers() {

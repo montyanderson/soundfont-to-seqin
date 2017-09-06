@@ -15,7 +15,7 @@ const soundfontParser = require("soundfont-parser");
 	const groups = soundfontParser(file);
 
 	const baseClass = await fs.readFile(`${__dirname}/baseClass.js`, "utf8");
-	const output = baseClass.replace("{{groups}}", JSON.stringify(groups));
+	const output = baseClass.replace("{{groups}}", JSON.stringify(groups, null, "\t"));
 
 	fs.writeFile(`${__dirname}/output.js`, output);
 
