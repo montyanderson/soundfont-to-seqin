@@ -20,7 +20,7 @@ class SoundFontSeqin {
 
 ### `output.js`
 
-```
+``` javascript
 class SoundFontSeqin {
 	constructor() {
 		this.groups = [
